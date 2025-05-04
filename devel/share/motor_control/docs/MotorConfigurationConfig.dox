@@ -1,0 +1,16 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~MM" : \b [int] Motor operating mode min: 0, default: 0, max: 1
+- \b "~MAMP" : \b [int] Motor Amp limit min: 0, default: 2, max: 4
+- \b "~MKP" : \b [int] PID Proportional gain min: 0, default: 10, max: 65535
+- \b "~MKI" : \b [int] PID Integral gain min: 0, default: 0, max: 65535
+- \b "~MKD" : \b [int] PID Differential gain min: 0, default: 0, max: 65535
+- \b "~MMRPM" : \b [int] Max RPM value min: 10, default: 1000, max: 65535
+- \b "~MPP" : \b [int] Motor pole pairs min: 1, default: 2, max: 255
+- \b "~MBK" : \b [int] Stop braking timeout (ms) min: 0, default: 2000, max: 65535
+- \b "~MWT" : \b [int] Motor watchdog timeout (ms) min: 0, default: 2000, max: 65535
+- \b "~MPEC" : \b [int] Enable PID error checking min: 0, default: 1, max: 1
+- \b "~MC" : \b [double] Target speed (m/s) min: -3.0, default: 0.0, max: 3.0
+

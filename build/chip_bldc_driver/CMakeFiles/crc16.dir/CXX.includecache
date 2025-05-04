@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/vocar/src/chip_bldc_driver/include/chip_bldc_driver/crc16.h
+stdint.h
+-
+
+/vocar/src/chip_bldc_driver/src/crc16.cpp
+chip_bldc_driver/crc16.h
+/vocar/src/chip_bldc_driver/src/chip_bldc_driver/crc16.h
+

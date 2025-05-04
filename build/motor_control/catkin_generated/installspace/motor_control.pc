@@ -1,0 +1,8 @@
+prefix=/vocar/install
+
+Name: motor_control
+Description: Description of motor_control
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: chip_bldc_driver rospy dynamic_reconfigure std_msgs message_runtime

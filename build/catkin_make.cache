@@ -1,0 +1,2 @@
+chip_bldc_driver:motor_control
+-DCATKIN_DEVEL_PREFIX=/vocar/devel -DCMAKE_INSTALL_PREFIX=/vocar/install -G Unix Makefiles

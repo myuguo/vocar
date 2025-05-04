@@ -1,0 +1,16 @@
+<launch>
+  <arg name="left_port" default="/dev/ttyUSB1" />
+  <arg name="right_port" default="/dev/ttyUSB2" />
+
+  <group ns="left_motor">
+    <node pkg="chip_bldc_driver" type="bldc_driver_node" name="bldc_driver_node" output="screen">
+      <param name="port" value="$(arg left_port)" />
+    </node>
+  </group>
+
+  <group ns="right_motor">
+    <node pkg="chip_bldc_driver" type="bldc_driver_node" name="bldc_driver_node" output="screen">
+      <param name="port" value="$(arg right_port)" />
+    </node>
+  </group>
+</launch>
